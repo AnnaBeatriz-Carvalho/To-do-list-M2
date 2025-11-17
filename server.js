@@ -18,21 +18,21 @@ const PORT = process.env.PORT || 3000;
 // ========================================
 const iniciarServidor = async () => {
   try {
-    console.log('🚀 Iniciando servidor...\n');
+    console.log(' Iniciando servidor...\n');
 
     // 1. Testa a conexão com o banco de dados
-    console.log('📊 Testando conexão com o banco de dados...');
+    console.log(' Testando conexão com o banco de dados...');
     await testarConexao();
 
     // 2. Sincroniza os models com o banco (cria/atualiza tabelas)
-    console.log('\n📋 Sincronizando tabelas...');
+    console.log('\n Sincronizando tabelas...');
     await sincronizarDatabase();
 
     // 3. Inicia o servidor Express
     app.listen(PORT, () => {
-      console.log(`\n✅ Servidor rodando com sucesso!`);
-      console.log(`🌐 URL: http://localhost:${PORT}`);
-      console.log(`📝 Endpoints disponíveis:`);
+      console.log(`\n Servidor rodando com sucesso!`);
+      console.log(` URL: http://localhost:${PORT}`);
+      console.log(` Endpoints disponíveis:`);
       console.log(`   GET    http://localhost:${PORT}/`);
       console.log(`   POST   http://localhost:${PORT}/tarefas`);
       console.log(`   GET    http://localhost:${PORT}/tarefas`);
@@ -40,12 +40,12 @@ const iniciarServidor = async () => {
       console.log(`   PUT    http://localhost:${PORT}/tarefas/:id`);
       console.log(`   PATCH  http://localhost:${PORT}/tarefas/:id/status`);
       console.log(`   DELETE http://localhost:${PORT}/tarefas/:id`);
-      console.log(`\n⏹️  Para parar o servidor: CTRL + C\n`);
+      console.log(`\n  Para parar o servidor: CTRL + C\n`);
     });
 
   } catch (error) {
     // Se der erro em qualquer etapa, exibe o erro e encerra
-    console.error('❌ Erro ao iniciar o servidor:', error);
+    console.error(' Erro ao iniciar o servidor:', error);
     process.exit(1); // Encerra o processo com código de erro
   }
 };
