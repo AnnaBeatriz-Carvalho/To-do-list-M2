@@ -147,10 +147,6 @@ Recomendo usar:
 
 Este projeto está sob a licença MIT.
 
-## 👩‍💻 Autor
-
-Desenvolvido com 💜 por [Seu Nome]
-
 ---
 
 ⭐ Se este projeto te ajudou, deixe uma estrela!
