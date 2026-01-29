@@ -7,7 +7,16 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "keywords": ["api", "todo", "rest", "express", "sequelize"],
+  "keywords": [
+    "api",
+    "todo",
+    "rest",
+    "express",
+    "sequelize"
+  ],
   "author": "Seu Nome",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6"
+  }
 }

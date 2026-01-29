@@ -15,7 +15,8 @@ const routes = require('./routes/index');
 // CRIAÇÃO DA APLICAÇÃO EXPRESS
 // ========================================
 const app = express();
-
+const cors = require('cors');
+app.use(cors()); // Habilita CORS para todas as rotas
 // ========================================
 // MIDDLEWARES GLOBAIS
 // ========================================
