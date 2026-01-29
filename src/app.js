@@ -2,6 +2,7 @@
 // IMPORTAÇÕES
 // ========================================
 const express = require('express');
+const cors = require('cors');
 require('dotenv').config(); // Carrega as variáveis do arquivo .env
 
 // Importa os middlewares customizados
@@ -15,7 +16,6 @@ const routes = require('./routes/index');
 // CRIAÇÃO DA APLICAÇÃO EXPRESS
 // ========================================
 const app = express();
-const cors = require('cors');
 app.use(cors()); // Habilita CORS para todas as rotas
 // ========================================
 // MIDDLEWARES GLOBAIS
